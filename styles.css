@@ -99,7 +99,7 @@ left: 80%;
 .author__Name{
   position: relative;
   font-size: 1.7rem;
-  left: 65%;
+  left: 60%;
   font-style: italic;
 }
 /* .authorNameApi{
@@ -141,7 +141,8 @@ border-radius: 17px 0 12px 0;
   body{
      margin: 5rem auto;
      background-position: center;
-     overflow-x: hidden;
+     overflow: hidden; 
+     height: 100vh;
      /* background-size  */
      
   }
