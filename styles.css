@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+
+:root{
+--main-color: #fff;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 15rem auto;
+ max-width: 60rem;
+ height: 80vh;
+  filter: brightness(100%);
+  background-image: url('https://images.unsplash.com/photo-1536152470836-b943b246224c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=438&q=80');
+   background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ 
+}
+
+.wrapper{
+  padding: 3rem 3rem;
+  max-width: 60rem;
+  min-height: 25rem;
+ margin: auto;
+  /* border: 2px solid orangered; */
+color: var(--main-color);
+  background-color: rgba(0, 0, 0, 0.2);
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,0.9248074229691877) 35%, rgba(0,212,255,1) 100%);
+
+
+}
+
+.Quote {
+  font-size: 5rem;
+  background-image:  linear-gradient(to left, rgba(2,0,36,1) 0%, rgba(9,105,121,0.9248074229691877) 35%, rgba(0,212,255,1) 100%);
+  filter: brightness(-0.01%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  /* color: rgb(255, 255, 255); */
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3.5rem;
+  text-align: center;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.quoteBox {
+  position: relative;
+}
+
+.fa-sharp{
+  font-size: 9rem;
+}
+
+#quoteContent {
+font-size: 1.9rem;
+padding-bottom: 1rem;
+position: relative;
+display: inline-block;
+/* transition: ; */
+}
+
+
+
+#quoteContent .fa-sharp{
+  font-size: 1rem;
+}
+
+.quoteBox::after{
+  content: '';
+  display: inline-block;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  border-bottom: 2.5px solid rgba(2,0,36,1);
+  
+}
+
+.newquote{
+font-size: 1.15rem;
+/* background-color: blue; */
+display: inline-block;
+margin-top: 1.4rem;
+/* position: relative; */
+position:static;
+top: 2rem;
+left: 80%;
+}
+
+.author__Name{
+  position: relative;
+  font-size: 1.7rem;
+  left: 65%;
+  font-style: italic;
+}
+/* .authorNameApi{
+} */
+
+.btn{
+  background-color:rgba(14, 124, 143, 0.925);
+  padding: 9px 13px;
+border: none;
+cursor: pointer;
+color: #fff;
+border-radius: 17px 0 12px 0;
+}
+
+.btn:hover{
+  padding: 10px 15px;
+}
+
+
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  85% {
+     transform: translateX(3%)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  body{
+     margin: 5rem auto;
+     background-position: center;
+     overflow-x: hidden;
+     /* background-size  */
+     
+  }
+
+  .wrapper{
+    max-width: 80%;
+  }
+}
